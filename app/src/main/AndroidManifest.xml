@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QLCHTL"
+        tools:targetApi="31">
+        <activity
+            android:name=".DanhMuc.CategoryActivity"/>
+        <activity
+            android:name=".Kho.Activity_Qlkho"/>
+
+        <activity
+            android:name=".Kho.Activity_nhap_xuat_kho"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Guest.GuestMenuActivity"/>
+        <activity android:name=".Guest.GuestInfoActivity"/>
+        <activity android:name=".Guest.GuestProductsActivity"/>
+        <activity android:name=".Guest.GuestShopInfoActivity"/>
+        <activity android:name=".Guest.GuestSalesActivity"/>
+        <activity android:name=".Guest.GuestSignupActivity"/>
+        <activity android:name=".QLUuDai.ChiTietUuDaiGuest" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".Guest.GuestFeedBack"/>
+        <activity android:name=".Guest.GuestWriteFeedback"/>
+        <activity android:name=".Guest.GuestMyFeedback"/>
+        <activity android:name=".Manager.ManagerMenuActivity"/>
+        <activity android:name=".Manager.ManagerUuDaiActivity"/>
+        <activity android:name=".QLUuDai.ChitietUuDaiManager" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".QLUuDai.ThemUuDai" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".QLKhachHang.ChiTietKhachHang" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".Manager.ManagerKhachHangActivity"/>
+        <activity android:name=".Manager.ManagerHoaDonActivity"/>
+        <activity android:name=".HoaDon.ChiTietHoaDon" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".Manager.ManagerNhanVienActivity"/>
+        <activity android:name=".NhanVien.ThemNhanVien" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".NhanVien.ChiTietNhanVien" android:theme="@style/Theme.AppCompat.Dialog"/>
+    </application>
+</manifest>

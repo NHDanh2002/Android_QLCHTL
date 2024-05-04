@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+            <Button
+                android:id="@+id/button3"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:text="Tìm kiếm"
+                android:layout_margin="1dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Danh sách nhân viên"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+        </TableRow>
+        <TableRow>
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="510dp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:text="Thêm nhân viên" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
